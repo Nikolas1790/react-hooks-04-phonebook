@@ -33,7 +33,7 @@ export class App extends Component {
   handleImputFilter = e => {
     const {name, value} = e.target;
     
-    this.setState({[name]: value})        
+    this.setState({[name]: value})    
   }
 
   getVisibleItems = () => {
@@ -49,6 +49,7 @@ export class App extends Component {
       this.setState({contacts: parseContacts})
     } 
   }
+  
   componentDidUpdate(_, prevState) { 
     if(this.state.contacts !== prevState.contacts){
       localStorage.setItem('contacts', JSON.stringify(this.state.contacts))
