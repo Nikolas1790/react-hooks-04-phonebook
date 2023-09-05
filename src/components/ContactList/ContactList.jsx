@@ -1,7 +1,7 @@
 import { ButtonDel, ItemContact, ItemsContracts } from "components/App.styled"
 
 export const ContactList =({options, onDeleteContact}) => {
-  // console.log(options)
+  
     return(
     <div>
         <ItemsContracts>          
